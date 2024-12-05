@@ -1,0 +1,23 @@
+{
+  "desktop-xl-width": "1416px",
+  "padding": {
+    "default": "16px",
+    "xl": "32px"
+  },
+  "default-options": {
+    "width": "100%",
+    "margin-left": "auto",
+    "margin-right": "auto"
+  },
+  "breakpoints": {
+    "md": {
+      "max-width": "calc(map(breakpoints, min, md) + (map(container, padding, default) * 2))"
+    },
+    "lg": {
+      "max-width": "calc(map(breakpoints, min, lg) + (map(container, padding, default) * 2))"
+    },
+    "xl": {
+      "max-width": "calc(map(container, desktop-xl-width) + (map(container, padding, default) * 2))"
+    }
+  }
+}

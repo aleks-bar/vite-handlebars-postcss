@@ -1,5 +1,4 @@
 import './logo'
 import './button'
-import './scroll-to-top'
-import './input'
-import './tooltip'
+// import './input'
+// import './tooltip'

@@ -1,0 +1,54 @@
+.button {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	border          : 1px solid transparent;
+	border-radius   : 8px;
+	transition      : background-color var(--transition-default), color var(--transition-default);
+	font-size       : 14px;
+	font-weight     : 700;
+	line-height     : 1.5;
+	width           : fit-content;
+	column-gap      : 8px;
+
+	svg {
+		@include size(24);
+		transition : fill var(--transition-default);
+	}
+
+	&:disabled {
+		opacity : .1
+	}
+
+	&:not(:disabled) {
+		cursor : pointer
+	}
+
+	&:not(:disabled):active {
+		transform : translateY(2%)
+	}
+
+	&-size {
+		&--sm {
+			padding : 7px 15px;
+		}
+	}
+
+	&--dark {
+		color: white;
+		border-color: gray;
+		background-color: black;
+		border-color: black;
+		fill: white;
+
+		&:hover {
+			border-color: darkgreen;
+			background-color: darkgreen;
+		}
+
+		&:active {
+			border-color: darkblue;
+			background-color: darkblue;
+		}
+	}
+}

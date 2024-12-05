@@ -25,9 +25,9 @@
       "vite/client",
     ],
     "paths": {
-      "cssCore": ["src/common/styles/settings/settings.scss"],
+      "@css-core": ["src/common/styles/_index.css"],
+      "@js-core": ["src/common/js/_index.ts"],
       "@/": ["src/*"],
-      "@common/*": ["src/common/*"],
       "@layouts/*": ["src/templates/layouts/*"],
       "@sections/*": ["src/templates/sections/*"],
       "@shared/*": ["src/templates/shared/*"],

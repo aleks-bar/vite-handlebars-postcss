@@ -1,0 +1,26 @@
+{
+  "heading": {
+    "lg": {
+      "line-height": ".8",
+      "font-size": "@include minMaxFontSize(40, 56);",
+      "letter-spacing": "-1.2px"
+    },
+    "md": {
+      "line-height": 1.05,
+      "font-size": { "min": 32, "max": 48 },
+      "letter-spacing": "-0.96px"
+    }
+  },
+  "title": {
+    "md": {
+      "line-height": "1.05",
+      "font-size": { "min": 24, "max": 32 },
+      "letter-spacing": "-0.96px"
+    },
+    "sm": {
+      "line-height": 1.2,
+      "font-size": { "min": 18, "max": 24 },
+      "letter-spacing": "-0.72px"
+    }
+  }
+}

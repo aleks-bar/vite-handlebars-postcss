@@ -1,5 +1,5 @@
 {{#if url }}
-  <a class="button-{{size}} button--{{variant}} {{class}}" href="{{ url }}" {{safe attributes}}>
+  <a class="button button-size--{{size}} button--{{variant}} {{class}}" href="{{ url }}" {{safe attributes}}>
     {{#if icon-left}}
       {{> svg id=icon-left }}
     {{/if}}
@@ -9,7 +9,7 @@
     {{/if}}
   </a>
 {{ else }}
-  <button class="button-{{size}} button--{{variant}} {{class}}" {{safe attributes}}>
+  <button class="button button-size--{{size}} button--{{variant}} {{class}}" {{safe attributes}}>
     {{#if icon-left}}
       {{> svg id=icon-left }}
     {{/if}}

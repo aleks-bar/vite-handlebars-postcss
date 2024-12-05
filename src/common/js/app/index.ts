@@ -1,4 +1,4 @@
-import { AppInterface } from "@common/js/app/types.ts";
+import { AppInterface } from "./types";
 import { mqData } from "@js/helpers/media";
 
 export const app: AppInterface = {
