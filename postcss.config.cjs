@@ -9,7 +9,6 @@ const settingsJsonFiles = [
     'container.json',
     'text-crop.json',
     'main-settings.json',
-    'buttons.json',
     'typography.json'
 ]
 
