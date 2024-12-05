@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "function-no-unknown": ["map"],
+    "at-rule-no-unknown": ["mixin"],
+    "selector-class-pattern": false,
+    "media-query-no-invalid": false
+  }
+}

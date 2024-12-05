@@ -1,0 +1,9 @@
+{
+  "line-height": 1.5,
+  "text-color": "var(--color-dark)",
+  "font-weight": 400,
+  "font-weight-title": 500,
+  "paragraph-margin-bottom": "8px",
+  "title-margin-bottom": "16px",
+  "list-padding-start": "20px"
+}

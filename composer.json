@@ -1,0 +1,19 @@
+{
+  "name": "aleks-bar/vite-handlebars-postcss",
+  "description": "Vite and Handlebars assembly for build to html pages with css and js files for each",
+  "type": "project",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Aleksander Bardin",
+      "email": "sergalexbard@gmail.com"
+    }
+  ],
+  "scripts": {
+    "post-create-project-cmd": [
+      "php -r \"if (is_dir('vendor')) { echo 'Removing vendor directory...'; deleteDirectory('vendor'); } function deleteDirectory($dir) { if (!is_dir($dir)) return; $items = scandir($dir); foreach ($items as $item) { if ($item === '.' || $item === '..') continue; $path = $dir . DIRECTORY_SEPARATOR . $item; if (is_dir($path)) deleteDirectory($path); else unlink($path); } rmdir($dir); }\"",
+      "php -r \"copy('.env.example', '.env');\"",
+      "npm install"
+    ]
+  }
+}

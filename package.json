@@ -1,0 +1,38 @@
+{
+  "name": "vite-handlebars-postcss",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:minify": "tsc && vite build",
+    "build": "cross-env VITE_MINIFIED=false vite build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^22.5.1",
+    "@types/resolve": "^1.20.6",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "cssnano": "^7.0.6",
+    "fast-glob": "^3.3.2",
+    "handlebars": "^4.7.8",
+    "postcss": "^8.4.47",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-define-property": "^0.5.0",
+    "postcss-each": "^1.1.0",
+    "postcss-map": "^0.11.0",
+    "postcss-nested": "^7.0.2",
+    "postcss-preset-env": "^10.0.5",
+    "postcss-sassy-mixins": "^2.1.0",
+    "postcss-simple-vars": "^7.0.1",
+    "postcss-sort-media-queries": "^5.2.0",
+    "stylelint": "^16.11.0",
+    "stylelint-config-standard": "^36.0.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-live-reload": "^3.0.3",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-handlebars": "^2.0.0"
+  }
+}
