@@ -1,5 +1,5 @@
 body {
-	font-family         : Onest, sans-serif;
+	font-family         : Manrope, sans-serif;
 	font-optical-sizing : auto;
 	font-style          : normal;
 	line-height         : 1.5;
@@ -61,17 +61,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading {
 	&-lg {
-		line-height    : .8;
-		letter-spacing : -1.2px;
+		line-height    : 1;
+		letter-spacing : -1.44px;
+		font-weight    : 700;
 
-		@include minMaxFontSize(40, 56);
+		@include minMaxFontSize(32, 64);
 	}
 
 	&-md {
 		line-height    : 1.05;
 		letter-spacing : -0.96px;
+		font-weight    : 600;
 
-		@include minMaxFontSize(32, 48);
+		@include minMaxFontSize(24, 48);
+
+		@media (min-width : ma(breakpoints, min, lg)) {
+			font-weight : 700;
+		}
 	}
 }
 
@@ -126,9 +132,9 @@ h1, h2, h3, h4, h5, h6 {
 		}
 
 		&--3 {
-			-webkit-line-clamp : 3;
-
 			@map text-crop base;
+
+			-webkit-line-clamp : 3;
 		}
 	}
 }

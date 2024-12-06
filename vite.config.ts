@@ -92,7 +92,7 @@ export default defineConfig( ( configEnv ) => {
     resolve: {
       alias: {
         "/src": resolve( process.cwd(), "src" ),
-        "@css-core": resolve( __dirname, 'src', 'common', 'styles', '_index.css' ),
+        "@css-core": resolve( __dirname, 'src', 'common', 'styles', '_index.pcss' ),
         "@js-core": resolve( __dirname, 'src', 'common', 'js', 'index.ts' ),
         "@": resolve( __dirname, 'src' ),
         "@layouts": resolve( __dirname, 'src', 'templates', 'layouts' ),

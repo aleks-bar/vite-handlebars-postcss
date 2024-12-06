@@ -1,4 +1,4 @@
-import './index.css'
+import './index.pcss'
 
 export const clickButton = () => {
   const button = document.querySelector('.section-main button')

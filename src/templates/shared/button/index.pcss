@@ -13,6 +13,7 @@
 
 	svg {
 		@include size(24);
+
 		transition : fill var(--transition-default);
 	}
 
@@ -35,20 +36,19 @@
 	}
 
 	&--dark {
-		color: white;
-		border-color: gray;
-		background-color: black;
-		border-color: black;
-		fill: white;
+		color            : white;
+		background-color : black;
+		border-color     : black;
+		fill             : white;
 
 		&:hover {
-			border-color: darkgreen;
-			background-color: darkgreen;
+			border-color     : darkgreen;
+			background-color : darkgreen;
 		}
 
 		&:active {
-			border-color: darkblue;
-			background-color: darkblue;
+			border-color     : darkblue;
+			background-color : darkblue;
 		}
 	}
 }
